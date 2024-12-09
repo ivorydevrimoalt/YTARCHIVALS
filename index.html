@@ -231,25 +231,4 @@ window.addEventListener('DOMContentLoaded', onLoad);
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value){expect(!this.data_,"Re-setting data.");this.data_=value}valueExists(id){return id in this.data_}getValue(id){expect(this.data_,"No data. Did you remember to include strings.js?");const value=this.data_[id];expect(typeof value!=="undefined","Could not find value for "+id);return value}getString(id){const value=this.getValue(id);expectIsType(id,value,"string");return value}getStringF(id,var_args){const value=this.getString(id);if(!value){return""}const args=Array.prototype.slice.call(arguments);args[0]=value;return this.substituteString.apply(this,args)}substituteString(label,var_args){const varArgs=arguments;return label.replace(/\$(.|$|\n)/g,(function(m){expect(m.match(/\$[$1-9]/),"Unescaped $ found in localized string.");return m==="$$"?"$":varArgs[m[1]]}))}getBoolean(id){const value=this.getValue(id);expectIsType(id,value,"boolean");return value}getInteger(id){const value=this.getValue(id);expectIsType(id,value,"number");expect(value===Math.floor(value),"Number isn't integer: "+value);return value}overrideValues(replacements){expect(typeof replacements==="object","Replacements must be a dictionary object.");for(const key in replacements){this.data_[key]=replacements[key]}}}function expect(condition,message){if(!condition){throw new Error("Unexpected condition on "+document.location.href+": "+message)}}function expectIsType(id,value,type){expect(typeof value===type,"["+value+"] ("+id+") is not a "+type)}expect(!loadTimeData,"should only include this file once");loadTimeData=new LoadTimeData;window.loadTimeData=loadTimeData;console.warn("crbug/1173575, non-JS module files deprecated.");</script><script>loadTimeData.data = {"header":"Index of LOCATION","headerDateModified":"Date Modified","headerName":"Name","headerSize":"Size","language":"en","parentDirText":"[parent directory]","textdirection":"ltr"};</script><script>start("C:\\");</script>
-<script>addRow("$AV_ASW","$AV_ASW",1,0,"0 B",1732554570,"11/25/24, 8:09:30 PM");</script>
-<script>addRow("$Recycle.Bin","$Recycle.Bin",1,0,"0 B",1732195657,"11/21/24, 4:27:37 PM");</script>
-<script>addRow("AMD","AMD",1,0,"0 B",1732195573,"11/21/24, 4:26:13 PM");</script>
-<script>addRow("Config.Msi","Config.Msi",1,0,"0 B",1733752378,"12/9/24, 4:52:58 PM");</script>
-<script>addRow("Documents and Settings","Documents%20and%20Settings",1,0,"0 B",1732227367,"11/22/24, 1:16:07 AM");</script>
-<script>addRow("OneDriveTemp","OneDriveTemp",1,0,"0 B",1732195715,"11/21/24, 4:28:35 PM");</script>
-<script>addRow("PerfLogs","PerfLogs",1,0,"0 B",1711956366,"4/1/24, 10:26:06 AM");</script>
-<script>addRow("Program Files","Program%20Files",1,0,"0 B",1733664922,"12/8/24, 4:35:22 PM");</script>
-<script>addRow("Program Files (x86)","Program%20Files%20(x86)",1,0,"0 B",1733752364,"12/9/24, 4:52:44 PM");</script>
-<script>addRow("ProgramData","ProgramData",1,0,"0 B",1733752389,"12/9/24, 4:53:09 PM");</script>
-<script>addRow("Recovery","Recovery",1,0,"0 B",1732192441,"11/21/24, 3:34:01 PM");</script>
-<script>addRow("SolaraTab","SolaraTab",1,0,"0 B",1732554223,"11/25/24, 8:03:43 PM");</script>
-<script>addRow("System Volume Information","System%20Volume%20Information",1,0,"0 B",1733749612,"12/9/24, 4:06:52 PM");</script>
-<script>addRow("Users","Users",1,0,"0 B",1732195603,"11/21/24, 4:26:43 PM");</script>
-<script>addRow("Windows","Windows",1,0,"0 B",1732807198,"11/28/24, 6:19:58 PM");</script>
-<script>addRow("XboxGames","XboxGames",1,0,"0 B",1732196187,"11/21/24, 4:36:27 PM");</script>
-<script>addRow(".GamingRoot",".GamingRoot",0,28,"28 B",1732195916,"11/21/24, 4:31:56 PM");</script>
-<script>addRow("audio.log","audio.log",0,190,"190 B",1732194712,"11/21/24, 4:11:52 PM");</script>
-<script>addRow("DumpStack.log.tmp","DumpStack.log.tmp",0,12288,"12.0 kB",1733646036,"12/8/24, 11:20:36 AM");</script>
-<script>addRow("hiberfil.sys","hiberfil.sys",0,13591920640,"12.7 GB",1733736897,"12/9/24, 12:34:57 PM");</script>
-<script>addRow("pagefile.sys","pagefile.sys",0,28991029248,"27.0 GB",1733646036,"12/8/24, 11:20:36 AM");</script>
-<script>addRow("swapfile.sys","swapfile.sys",0,16777216,"16.0 MB",1733646036,"12/8/24, 11:20:36 AM");</script>
+<script>addRow("rbxstry.mp4","rbxstry.mp4",1,4873932,"4 MB",1732554570,"06/06/21, 4:19:05 AM");</script>
